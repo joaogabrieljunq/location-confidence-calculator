@@ -32,4 +32,4 @@ This repository contains tools and scripts for analyzing and determining the con
    ```
 
 5. **Test Demo**:
-   [Click here to access the live demo](here-the-link)
+   [Click here to access the live demo](https://location-confidence-calculator-yhcie8emmbjyqjn977vruh.streamlit.app/)
