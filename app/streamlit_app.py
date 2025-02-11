@@ -36,6 +36,7 @@ if uploaded_file is not None:
     st.write("### Select Time Interval")
     start_time = st.text_input("Start Time (YYYY-MM-DD HH:MM:SS)")
     end_time = st.text_input("End Time (YYYY-MM-DD HH:MM:SS)")
+    time_gap_minutes = st.number_input("Time Gap (minutes)", min_value=1, value=30)
 
     if st.button("Calculate Confidence"):
         # Validate inputs
@@ -47,7 +48,9 @@ if uploaded_file is not None:
                 st.error("🚨 Start time must be before end time.")
             else:
                 # Calculate confidence for the selected interval
-                result = calculate_confidence_for_interval(data, start_time, end_time)
+                result = calculate_confidence_for_interval(
+                    data, start_time, end_time, time_gap_minutes
+                )
                 st.write("### Confidence Calculation Result")
                 st.dataframe(result, use_container_width=True)
 
