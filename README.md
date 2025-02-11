@@ -12,6 +12,24 @@ This repository contains tools and scripts for analyzing and determining the con
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/project-name.git
-   cd project-name
+   git clone https://github.com/joaogabrieljunq/location-confidence-calculator.git
+   cd location-confidence-calculator
    ```
+
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run Unit Tests**:
+   ```bash
+   python app/test.py
+   ```
+
+4. **Run the Streamlit App**:
+   ```bash
+   streamlit run app/streamlit_app.py
+   ```
+
+5. **Test Demo**:
+   [Click here to access the live demo](https://location-confidence-calculator-yhcie8emmbjyqjn977vruh.streamlit.app/)
